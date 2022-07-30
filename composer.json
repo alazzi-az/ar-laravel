@@ -1,12 +1,12 @@
 {
-    "name": "alazzi-az/ArLaravel",
+    "name": "alazzi-az/ar-laravel",
     "description": "A ar-php Wrapper for Laravel",
     "keywords": [
         "alazzi-az",
         "laravel",
         "ArLaravel"
     ],
-    "homepage": "https://github.com/AlazziAz/ArLaravel",
+    "homepage": "https://github.com/alazzi-az/ar-laravel",
     "license": "MIT",
     "authors": [
         {

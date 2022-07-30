@@ -7,7 +7,7 @@ use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use AlazziAz\ArLaravel\Commands\ArLaravelCommand;
 
-class ArLaravelServiceProvider extends PackageServiceProvider
+class ar-laravelServiceProvider extends PackageServiceProvider
 {
     public function registeringPackage()
     {
@@ -17,10 +17,10 @@ class ArLaravelServiceProvider extends PackageServiceProvider
             return new Arabic();
         });
         $this->app->singleton('arLaravel', function () {
-            return new ArLaravel($this->app->make('arabic'));
+            return new ar-laravel($this->app->make('arabic'));
         });
         $this->app->singleton('arLaravelCommand', function () {
-            return new ArLaravelCommand();
+            return new ar-laravelCommand();
         });
 
     }
@@ -33,7 +33,7 @@ class ArLaravelServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('ArLaravel')
+            ->name('ar-laravel')
             ->hasConfigFile();
     }
 }

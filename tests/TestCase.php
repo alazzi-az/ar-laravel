@@ -1,11 +1,11 @@
 <?php
 
-namespace AlazziAz\ArLaravel\Tests;
+namespace AlazziAz\ar-laravel\Tests;
 
-use AlazziAz\ArLaravel\Facades\ArLaravel;
+use AlazziAz\ar-laravel\Facades\ar-laravel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AlazziAz\ArLaravel\ArLaravelServiceProvider;
+use AlazziAz\ar-laravel\ar-laravelServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -14,23 +14,23 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'AlazziAz\\ArLaravel\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'AlazziAz\\ar-laravel\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            ArLaravelServiceProvider::class,
+            ar-laravelServiceProvider::class,
         ];
     }
 
     public function getEnvironmentSetUp($app)
     {
         config()->set('database.default', 'testing');
-        ArLaravel::
+        ar-laravel::
         /*
-        $migration = include __DIR__.'/../database/migrations/create_ArLaravel_table.php.stub';
+        $migration = include __DIR__.'/../database/migrations/create_ar-laravel_table.php.stub';
         $migration->up();
         */
     }

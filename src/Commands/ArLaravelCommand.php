@@ -1,12 +1,12 @@
 <?php
 
-namespace AlazziAz\ArLaravel\Commands;
+namespace AlazziAz\ar-laravel\Commands;
 
 use Illuminate\Console\Command;
 
-class ArLaravelCommand extends Command
+class ar-laravelCommand extends Command
 {
-    public $signature = 'ArLaravel';
+    public $signature = 'ar-laravel';
 
     public $description = 'My command';
 

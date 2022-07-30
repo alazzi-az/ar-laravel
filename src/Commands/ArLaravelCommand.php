@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace AlazziAz\ArLaravel\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class ArLaravelCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'ArLaravel';
 
     public $description = 'My command';
 

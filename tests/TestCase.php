@@ -2,10 +2,10 @@
 
 namespace AlazziAz\ArLaravel\Tests;
 
+use AlazziAz\ArLaravel\ArLaravelServiceProvider;
 use AlazziAz\ArLaravel\Facades\ArLaravel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AlazziAz\ArLaravel\ArLaravelServiceProvider;
 
 class TestCase extends Orchestra
 {

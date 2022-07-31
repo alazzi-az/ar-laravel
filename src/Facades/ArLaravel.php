@@ -6,8 +6,6 @@ use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \AlazziAz\ArLaravel\ArLaravel
- *
- *
  */
 class ArLaravel extends Facade
 {

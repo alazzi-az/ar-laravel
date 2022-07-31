@@ -11,8 +11,6 @@ class ArLaravel
         //
     }
 
-
-
     public function getArabic(): Arabic
     {
         return $this->arabic;
@@ -20,9 +18,9 @@ class ArLaravel
 
     public function adjustContent($html)
     {
-        if (!$this->isArabic($html))
+        if (! $this->isArabic($html)) {
             return $html;
-
+        }
 
         $offset = $this->arabic->arIdentify($html);
 
@@ -38,6 +36,4 @@ class ArLaravel
     {
         return $this->arabic->isArabic($text);
     }
-
-
 }

@@ -9,5 +9,4 @@ it('can test', function () {
 it('can adujest arabic string', function () {
     $text = ArLaravel::adjustContent('السلام عليكم');
     expect(ArLaravel::isArabic($text))->toBeTrue();
-
 });

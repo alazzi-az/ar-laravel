@@ -5,9 +5,9 @@ namespace AlazziAz\ArLaravel;
 use ArPHP\I18N\Arabic;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use AlazziAz\ArLaravel\Commands\ArLaravelCommand;
 
-class ar-laravelServiceProvider extends PackageServiceProvider
+
+class ArLaravelServiceProvider extends PackageServiceProvider
 {
     public function registeringPackage()
     {
@@ -17,11 +17,9 @@ class ar-laravelServiceProvider extends PackageServiceProvider
             return new Arabic();
         });
         $this->app->singleton('arLaravel', function () {
-            return new ar-laravel($this->app->make('arabic'));
+            return new ArLaravel($this->app->make('arabic'));
         });
-        $this->app->singleton('arLaravelCommand', function () {
-            return new ar-laravelCommand();
-        });
+
 
     }
 

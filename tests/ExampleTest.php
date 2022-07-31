@@ -1,13 +1,13 @@
 <?php
 
-use AlazziAz\ar-laravel\Facades\ar-laravel;
+use AlazziAz\ArLaravel\Facades\ArLaravel;
 
 it('can test', function () {
     expect(true)->toBeTrue();
 });
 
 it('can adujest arabic string', function () {
-    $text = ar-laravel::adjustContent('السلام عليكم');
-    expect(ar-laravel::isArabic($text))->toBeTrue();
+    $text = ArLaravel::adjustContent('السلام عليكم');
+    expect(ArLaravel::isArabic($text))->toBeTrue();
 
 });

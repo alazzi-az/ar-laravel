@@ -31,7 +31,7 @@ class ArLaravelServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('ar-laravel')
+            ->name('ArLaravel')
             ->hasConfigFile();
     }
 }
